@@ -17,4 +17,5 @@ for x in range(1, no_of_symbols+1):
 for z in range(1, no_of_numbers+1):
     random_number = random.choice(numbers)
     password += random_number
-print("your generated password is" + password)
+# shuffle the password
+print("your generated password is: " + ''.join(random.sample(password, len(password))))
